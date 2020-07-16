@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--We use android:weightSum to divide the screen into equal parts-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity">
+    <!--android:layout_weight attribute distributes the equal divisions-->
+    <Button
+        android:onClick="showToast"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#051370"
+        android:text="Toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_weight="8"
+        android:background="#F6DF04"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="100sp"
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="showCount"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#051370"
+        android:text="Count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
