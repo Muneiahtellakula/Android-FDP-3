@@ -29,4 +29,10 @@ public class MainActivity extends AppCompatActivity {
         count++;
         count_text_view.setText(String.valueOf(count));
     }
+
+    public void decreaseCount(View view)
+    {
+        count--;
+        count_text_view.setText(String.valueOf(count));
+    }
 }

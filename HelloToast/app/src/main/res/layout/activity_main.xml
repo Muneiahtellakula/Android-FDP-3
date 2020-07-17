@@ -31,15 +31,34 @@
         android:text="0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
 
     <Button
-        android:onClick="showCount"
-        android:layout_weight="1"
+        android:onClick="decreaseCount"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#051370"
-        android:text="Count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="2dp"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:layout_marginStart="2dp"
+        android:onClick="showCount"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#051370"
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
 
 </LinearLayout>
